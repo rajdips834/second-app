@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Newlyweds } from 'src/interfaces/newlywed';
 import { VenueDetails } from 'src/interfaces/venueDetais';
 
 @Component({
@@ -17,5 +18,14 @@ export class DetailsComponent {
     addressLine2:'Deeznuts'
 
 
+  }
+  newlyweds:Newlyweds={
+    bride: 'Meghana',
+    groom:'Anirban'
+  }
+
+  foo(e: any) {
+
+    console.log(e);
   }
 }

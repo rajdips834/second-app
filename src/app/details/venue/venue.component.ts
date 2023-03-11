@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { VenueDetails } from 'src/interfaces/venueDetais';
 
 @Component({
@@ -8,5 +8,10 @@ import { VenueDetails } from 'src/interfaces/venueDetais';
 })
 export class VenueComponent {
   @Input() venue?: VenueDetails
+  @Output() dance: EventEmitter<any>=new EventEmitter<any>()
+
+  doubleClick(event:any){
+    console.log('babayaga')
+  }
 
 }
